@@ -1,0 +1,1 @@
+A news website that makes use of the News API. Specifically, axios is used to make a get request as described in the documentation here https://newsapi.org/docs/endpoints/everything.
