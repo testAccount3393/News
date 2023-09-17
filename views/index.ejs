@@ -25,6 +25,7 @@
                         <div class="card-body">
                             <img src="<%= data[i].urlToImage %>" />
                             <a href="<%= data[i].url %>"><h3><%= data[i].title %></h3></a>
+                            <p><%= data[i].publishedAt.slice(0,10) %></p>
                             <p><%= data[i].description %></p>
                         </div>
                     </div>

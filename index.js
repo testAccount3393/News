@@ -15,6 +15,7 @@ APP.get("/", (req, res) => {
 APP.post("/", async (req, res) => {
     try {
         var response = await axios.get("https://newsapi.org/v2/everything?language=en&apiKey=" + API_KEY + "&q=" + req.body.search);
+        console.log(response.data.articles);
         res.render("index.ejs", {data: response.data.articles, numberOfResults: response.data.totalResults });
     } catch(error) {
         res.render("index.ejs");
